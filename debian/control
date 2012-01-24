@@ -1,0 +1,16 @@
+Source: fcitx-fbterm
+Section: utils
+Priority: optional
+Maintainer: IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org>
+Uploaders: Aron Xu <aron@debian.org>, YunQiang Su <wzssyqa@gmail.com>
+Build-Depends: debhelper (>= 8), cmake, gettext, fcitx-libs-dev
+Standards-Version: 3.9.2
+Homepage: http://code.google.com/p/fcitx
+Vcs-Git: git://git.debian.org/pkg-ime/fcitx-fbterm.git
+Vcs-Browser: http://git.debian.org/?p=pkg-ime/fcitx-fbterm.git
+
+Package: fcitx-frontend-fbterm
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Fbterm frontend for Fcitx
+ <insert long description, indented with spaces>

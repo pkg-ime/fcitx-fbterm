@@ -1,0 +1,5 @@
+fcitx-fbterm (0.1.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #639294)
+
+ -- Aron Xu <aron@debian.org>  Wed, 26 Oct 2011 04:18:55 +0800
