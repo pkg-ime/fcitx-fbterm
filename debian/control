@@ -10,8 +10,8 @@ Vcs-Git: git://git.debian.org/pkg-ime/fcitx-fbterm.git
 Vcs-Browser: http://git.debian.org/?p=pkg-ime/fcitx-fbterm.git
 
 Package: fcitx-frontend-fbterm
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Architecture: linux-any
+Depends: ${shlibs:Depends}, ${misc:Depends}, fbterm
 Description: Flexible Input Method Framework - FbTerm frontend
  Fcitx is a input method framework with extension support, which provides
  an interface for entering characters of different scripts in applications
