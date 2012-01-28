@@ -1,0 +1,19 @@
+fcitx-fbterm for Debian
+---------------------------
+
+fcitx-fbterm contains two commands in /usr/bin: fcitx-fbterm and
+fcitx-fbterm-helper. Please use fcitx-fbterm-helper to start Fcitx outside
+a fbterm, i.e. the helper script will help you launch fbterm. When Fcitx
+isn't running in backgroud, you need to use `fcitx-fbterm-helper -l` to
+start it; if it's already running, just run `fcitx-fbterm-helper`.
+
+If you would like to toggle input method via Ctrl+Space keyboard shortcut, 
+you'll need to add setuid bit to /usr/bin/fbterm, which isn't added by
+default in Debian due to security concerns. Run the following command as
+root will do the work for you:
+ chmod 6755 root:utmp /usr/bin/fbterm
+
+If later you decide to recover to the defaults of fbterm, run:
+ chmod 0755 root:root /usr/bin/fbterm
+
+ -- Aron Xu <aron@debian.org>  Wed, 26 Oct 2011 04:18:55 +0800
