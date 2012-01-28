@@ -4,7 +4,7 @@ fcitx-fbterm for Debian
 fcitx-fbterm contains two commands in /usr/bin: fcitx-fbterm and
 fcitx-fbterm-helper. Please use fcitx-fbterm-helper to start Fcitx outside
 a fbterm, i.e. the helper script will help you launch fbterm. When Fcitx
-isn't running in backgroud, you need to use `fcitx-fbterm-helper -l` to
+isn't running in background, you need to use `fcitx-fbterm-helper -l` to
 start it; if it's already running, just run `fcitx-fbterm-helper`.
 
 If you would like to toggle input method via Ctrl+Space keyboard shortcut, 
