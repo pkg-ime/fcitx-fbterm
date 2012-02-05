@@ -1,7 +1,7 @@
 fcitx-fbterm (0.1.2-1) unstable; urgency=low
 
   * New upstream release: for fcitx 4.2.0.
-  * Drop 0001-use-bash-in-header.patch: accepted y upstream.
+  * Drop 0001-use-bash-in-header.patch: accepted upstream.
 
  -- YunQiang Su <wzssyqa@gmail.com>  Sun, 05 Feb 2012 22:49:47 +0800
 
