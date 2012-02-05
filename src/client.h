@@ -14,7 +14,7 @@
  *   You should have received a copy of the GNU General Public License     *
  *   along with this program; if not, write to the                         *
  *   Free Software Foundation, Inc.,                                       *
- *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
+ *   51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.              *
  ***************************************************************************/
 
 #ifndef FCITX_CLIENT_H
@@ -42,7 +42,7 @@ extern "C" {
     void FcitxIMClientFocusIn(FcitxIMClient* client);
     void FcitxIMClientFocusOut(FcitxIMClient* client);
     void FcitxIMClientSetCursorLocation(FcitxIMClient* client, int x, int y);
-    void FcitxIMClientSetCapacity(FcitxIMClient* client, CapacityFlags flags);
+    void FcitxIMClientSetCapacity(FcitxIMClient* client, FcitxCapacityFlags flags);
     void FcitxIMClientReset(FcitxIMClient* client);
     int FcitxIMClientProcessKey(FcitxIMClient* client, uint32_t keyval, uint32_t keycode, uint32_t state, FcitxKeyEventType type, uint32_t t);
     void FcitxIMClientConnectSignal(FcitxIMClient* imclient,
@@ -54,7 +54,7 @@ extern "C" {
                                     void* user_data,
                                     GClosureNotify freefunc
                                    );
-    HOTKEYS* FcitxIMClientGetTriggerKey(FcitxIMClient* client);
+    FcitxHotkey* FcitxIMClientGetTriggerKey(FcitxIMClient* client);
 
 #ifdef __cplusplus
 }
